@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**
+* VARIABLES
+*/
+:root {
+    --color-yellow: #FED700;
+    --color-blue: #0062BD;
+    --color-brown: #AE1C1C;
+    --color-dark-d: #353535;
+    --color-dark-m: #555555;
+    --color-dark-l: #757575;
+}
+
+
+/**
+* CUSTOM CLASSES
+*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.txt-dark-l {
+    color: var(--color-dark-l);
+}
+
+.txt-dark-m {
+    color: var(--color-dark-m);
+}
+
+.txt-dark-d {
+    color: var(--color-dark-d);
+}
+
+.bg-dark-l {
+    background-color: var(--color-dark-l);
+}
+
+.bg-dark-m {
+    background-color: var(--color-dark-m);
+}
+
+.bg-dark-d {
+    background-color: var(--color-dark-d);
+}
+
+.txt-bold {
+    font-weight: bold;
+}
+
+.product-title {
+    color: var(--color-blue);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/**
+* COMMON
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}

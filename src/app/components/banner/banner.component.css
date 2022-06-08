@@ -1,0 +1,167 @@
+.btn-all-departments {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 20px;
+    background: var(--color-yellow);
+    border: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+    width: 265px;
+}
+
+.btn-all-departments img {
+    width: 30px;
+    height: auto;
+}
+
+.menu-all-departments {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    text-align: left;
+    padding: 20px;
+    font-size: 16px;
+    width: 265px;
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-all-departments h3 {
+    font-size: 16px;
+}
+
+.menu-all-departments h3,
+.menu-all-departments p {
+    border-bottom: 1px solid lightgray;
+    padding: 7px;
+}
+
+.menu-all-departments p:last-child {
+    border-bottom: none;
+}
+
+.menu-all-departments h3:hover,
+.menu-all-departments p:hover {
+    font-weight: bold;
+    background-color: lightgray;
+}
+
+.banner-heading-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.banner-tab button {
+    background: transparent;
+    border: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.banner-tab button.active {
+    color: var(--color-brown);
+}
+
+.mega-menu-cont {
+    position: relative;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 850px;
+    height: 400px;
+    border: 1px solid lightgray;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: white;
+    color: black;
+    padding: 20px;
+    gap: 12px;
+    font-weight: normal;
+    text-align: left;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+/* .mega-menu h3 {} */
+
+.mega-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.mega-menu a:hover {
+    text-decoration: underline;
+}
+
+.banner-content {
+    background: url("src/assets/img/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.banner-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-txt .title-1 {
+    font-size: 60px;
+}
+
+.banner-txt .title-2 {
+    font-size: 50px;
+}
+
+.banner-txt .subtitle {
+    font-size: 14.5px;
+    font-weight: bold;
+}
+
+.banner-txt .from {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.banner-txt .price {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.banner-txt .price sup {
+    font-size: 30px;
+}
+
+.banner-txt .c2a {
+    background-color: var(--color-yellow);
+    border: 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 25px;
+    width: 220px;
+}
