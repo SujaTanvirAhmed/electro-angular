@@ -1,0 +1,28 @@
+.product-types-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-type-title {
+    border-bottom: 1px solid gray;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.product-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

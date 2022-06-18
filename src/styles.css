@@ -75,3 +75,140 @@ a {
 button {
     cursor: pointer;
 }
+
+/**
+* PRODUCT CARD
+*/
+.item-card-big {
+    height: auto;
+}
+
+.item-card-big .thumb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.item-card-big .thumb img {
+    height: 50px;
+    width: auto;
+    border: 1px solid lightgray;
+}
+
+.item-card {
+    position: relative;
+    height: 388px;
+    padding: 15px;
+    border-radius: 2px;
+    background: white;
+    cursor: pointer;
+}
+
+.item-card-side {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-card-side .card-img-cont {
+    width: 185px;
+}
+
+.card-img-cont img {
+    width: 100%;
+    height: auto;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.item-card-side .item-buy {
+    margin-top: 25px;
+}
+
+.item-card::after {
+    content: "";
+    width: 1px;
+    height: 280px;
+    background-color: lightgray;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.item-card:hover {
+    box-shadow: 3px 3px 7px gray;
+}
+
+.item-card:hover .item-wish {
+    visibility: visible;
+}
+
+.item-card .subtitle {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.item-buy {
+    margin-bottom: 20px;
+}
+
+.item-buy .price {
+    font-size: 20px;
+}
+
+.item-buy,
+.item-wish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-wish {
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+    visibility: hidden;
+}
+
+.item-buy .cart-cont {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--color-yellow);
+}
+
+.item-card-big .item-buy .cart-cont {
+    position: relative;
+    width: 140px;
+    border-radius: 30px;
+}
+
+.item-card-big .item-buy .cart-cont::after {
+    content: "Add to Cart";
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.item-buy img,
+.item-wish img {
+    width: 20px;
+    height: 20px;
+}
+
+.item-wish p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}

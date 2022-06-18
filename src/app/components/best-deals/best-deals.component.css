@@ -1,0 +1,27 @@
+.best-heading-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.best-deals {
+    background: #F9F9F9;
+}
+
+.best-deals-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 3px;
+}
+
+.best-side {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,21 @@
+<section class="bestsellers">
+    <div class="container">
+        <div class="bestsellers-heading-group">
+            <h1 class="bestsellers-title">Bestsellers</h1>
+            <div class="bestsellers-tab">
+                <button class="tab-title tab-title-active">Top 20</button>
+                <button class="tab-title tab-title">Phones & Tablets</button>
+                <button class="tab-title tab-title">Laptops & Computers</button>
+                <button class="tab-title tab-title">Video Cameras</button>
+            </div>
+        </div>
+
+        <div class="bestsellers-group">
+
+            <electro-product-card-side *ngFor="let bsp of bestSellersProducts" [productTitle]="bsp.title"
+                [productSubtitle]="bsp.subtitle" [productPrice]="bsp.price" [productPhotoUrl]="bsp.photoUrl">
+            </electro-product-card-side>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+.bestsellers-heading-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestsellers-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 3px;
+}
+
+.best-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    padding: 25px;
+    border: 1px solid lightgray;
+}
+
+.best-item:hover {
+    box-shadow: 3px 3px 7px black;
+}
+
+.best-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

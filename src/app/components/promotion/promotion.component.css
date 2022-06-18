@@ -1,0 +1,32 @@
+.promotion {
+    margin: 50px 0;
+}
+
+.promotion .container {
+    position: relative;
+}
+
+.promotion-group {
+    /* position: absolute; */
+    background: url("src/assets/img/promotion-bg.jpg") lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding-left: 60px;
+    top: 0;
+}
+
+.promotion-txt {
+    font-size: 33px;
+}
+
+.promotion-offer {
+    padding: 15px 40px;
+    background-color: var(--color-yellow);
+    border-radius: 7px;
+}

@@ -1,0 +1,12 @@
+<section class="recently-viewed">
+    <div class="container">
+
+        <div class="recently-viewed-group">
+
+            <electro-product-card *ngFor="let rvp of recentlyViewedProducts" [productTitle]="rvp.title"
+                [productSubtitle]="rvp.subtitle" [productPrice]="rvp.price" [productImage]="rvp.photoUrl">
+            </electro-product-card>
+
+        </div>
+    </div>
+</section>

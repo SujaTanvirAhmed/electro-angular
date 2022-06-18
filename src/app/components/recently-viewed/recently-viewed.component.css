@@ -1,0 +1,31 @@
+.recently-viewed-group {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 3px;
+}
+
+.recently-viewed-group .item-card {
+    height: auto;
+}
+
+.recently-viewed-group .item-card>img {
+    width: 100%;
+    height: auto;
+}
+
+.recently-viewed .recently-viewed-item {
+    width: 200px;
+    border-right: 2px solid lightgray;
+    padding-right: 10px;
+    padding: 10px;
+}
+
+.recently-viewed .recently-viewed-item:hover {
+    box-shadow: 3px 3px 5px black;
+}
+
+.recently-viewed .recently-viewed-item img {
+    width: 100%;
+    height: auto;
+}

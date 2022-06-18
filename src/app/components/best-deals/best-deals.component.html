@@ -1,0 +1,38 @@
+<section class="best-deals">
+    <div class="container">
+        <div class="best-heading-group">
+            <button>Best Deals</button>
+            <button>TV & Video</button>
+            <button>Cameras</button>
+            <button>Audio</button>
+            <button>Smartphones</button>
+            <button>GPS & Navi</button>
+            <button>Computers</button>
+            <button>Portable Audio</button>
+            <button>Accessories</button>
+        </div>
+
+        <div class="best-deals-group">
+            <div class="best-side">
+
+                <electro-product-card *ngFor="let bdp of bestDealsProducts" [productTitle]="bdp.title"
+                    [productSubtitle]="bdp.subtitle" [productImage]="bdp.photoUrl" [productPrice]="bdp.price">
+                </electro-product-card>
+
+            </div>
+
+            <!-- middle -->
+            <electro-product-card-big></electro-product-card-big>
+            <!-- middle -->
+
+            <div class="best-side">
+
+                <electro-product-card *ngFor="let bdp of bestDealsProducts" [productTitle]="bdp.title"
+                    [productSubtitle]="bdp.subtitle" [productImage]="bdp.photoUrl" [productPrice]="bdp.price">
+                </electro-product-card>
+
+            </div>
+        </div>
+
+    </div>
+</section>

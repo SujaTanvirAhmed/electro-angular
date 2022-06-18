@@ -1,0 +1,76 @@
+<section class="featured">
+    <div class="container">
+
+        <div class="featured-items-group">
+
+            <div class="featured-left">
+
+                <div class="featured-title-group">
+                    <div class="left">
+                        <p>Special</p>
+                        <p>Offer</p>
+                    </div>
+                    <div class="featured-save">
+                        <p class="txt">Save</p>
+                        <p class="money">$120</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/game-control.jpg" alt="">
+                </div>
+
+                <p class="product-title">Game Console Controller</p>
+                <p class="product-title">+ USB 3.0 Cable</p>
+                <p class="price"><span>$99.00</span> $79.00</p>
+                <div class="progress-title">
+                    <p>Availabe: 6</p>
+                    <p>Already Sold: 28</p>
+                </div>
+                <div class="range-track">
+                    <div class="range-slide"></div>
+                </div>
+                <div>Range Track</div>
+                <div class="offer-limit">
+                    <p class="offer-txt">Hurry Up! Offer ends in</p>
+                    <div class="time time-num">
+                        <span>00</span>:<span>00</span>:<span>00</span>
+                    </div>
+                    <div class="time time-txt">
+                        <span>HOURS</span>:<span>MINS</span>:<span>SECS</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="featured-right">
+
+                <div class="featured-heading-group">
+                    <button id="btn-featured">Feautured</button>
+                    <button id="btn-onsale">On Sale</button>
+                    <button id="btn-toprated">Top Rated</button>
+                </div>
+
+                <div class="featured-right-group" id="content-featured">
+                    <!-- featured product card -->
+                    <div *ngFor="let fp of featuredProducts">
+                        <electro-product-card [productTitle]="fp.title" [productSubtitle]="fp.subtitle"
+                            [productPrice]="fp.price" [productImage]="fp.photoUrl"></electro-product-card>
+                    </div>
+                </div>
+
+                <div class="featured-right-group" id="content-onsale">
+                    <!-- onsale product card -->
+                </div>
+
+                <div class="featured-right-group" id="content-toprated">
+                    <!-- toprated product card -->
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
